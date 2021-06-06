@@ -12,12 +12,20 @@ button.addEventListener("click", function () {
 
 var opreater = select.options[select.selectedIndex].value;
 
-let operators = {
-'+': function (n1, n2) { return n1 + n2 },
-'-': function (n1, n2) { return n1 - n2 },
-'*': function (n1, n2) { return n1 * n2 },
-'/': function (n1, n2) { return n1 / n2 }
-};
+//+
+
+var operators = {
+'+': function (n1, n2) { return n1 + n2 }},
+
+var operators = {
+'-': function (n1, n2) { return n1 - n2 }},
+
+var operators = {
+'*': function (n1, n2) { return n1 * n2 }},
+
+var operators = {
+'/': function (n1, n2) { return n1 / n2 }};
+
 
 result.value = operators[opreater](+n1.value, +n2.value);
 });
